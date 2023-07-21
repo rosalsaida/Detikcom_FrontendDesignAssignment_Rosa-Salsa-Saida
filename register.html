@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detikfinance | Business Plan Competition 2023</title>
+
+    <link rel="stylesheet" href="assets/css/style-regis.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="padding-left: 1em;">
+                <h6 class="detikfinance">detikfinance</h6>
+                <h4>BUSINESS PLAN</h4>
+                <h6 class="competition">COMPETITION 2023</h6>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" style="margin-right: 1em;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="offcanvas-body" style="padding-left: 1em;">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#mechanism">Mechanism</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#latest-update">Latest Update</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-menu">
+                <ul class="menu">
+                    <li>
+                        <a aria-current="page" href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#mechanism">Mechanism</a>
+                    </li>
+                    <li>
+                        <a href="index.html#latest-update">Latest Update</a>
+                    </li>
+                    <li>
+                        <a class="active" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Section Registrasi Business Plan Competition -->
+    <section class="registration">
+        <div class="regist-wrapper">
+            <div class="formregist">
+                <h1>Registrasi</h1>
+                <form action="#" method="post">
+                    <input class="form-control" type="text" id="nama-perusahaan" name="nama-perusahaan" placeholder="Nama Perusahaan*"><br>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email*"><br>
+                    <input class="form-control" type="tel" id="noTlp" name="noTlp" placeholder="Nomor Telepon*">
+                    <p class="form-text">Isi hanya angka</p>
+                    <textarea class="form-control" id="tentangPerusahaan" name="tentangPerusahaan" placeholder="Tentang Perusahaan (Max. 200 character)*"></textarea><br>
+                    <div class="up-logo">
+                        <!-- Upload File Logo Perusahaan -->
+                        <div class="card text-center mb-3" style="width: 15vw; height: 20vw;">
+                            <div class="card-body" style="padding-top: 5rem;">
+                                <p class="image-upload">
+                                    <label for="user-upload">
+                                    <a class="btn btn-sm" rel="nofollow"><img src="assets/img/plus.png"></a>
+                                    </label>
+                                    <input type="file" name="user-upload" id="user-upload">
+                                </p>
+                                <p class="card-text">Upload file logo*</p>
+                            </div>
+                        </div>
+                        <div class="ketentuan">
+                            <ol>
+                                <li>Format file: .png, .jpg, .jpeg</li>
+                                <li>Maksimal ukuran file 200KB</li>
+                                <li>Hindari penggunaan logo berwarna putih</li>
+                                <li>Minimal lebar 300px</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- Upload File Deck Peusahaan -->
+                    <table style="width: 58vw;">
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 10px;"><input type="text" class="form-control" placeholder="Profil Perusahaan atau Deck (opsional)"></td>
+                            <td style="padding-top: 5px;">
+                                <div class="up-deck">
+                                    <p class="image-upload">
+                                        <label for="user-upload">
+                                        <a class="btn btn-primary" rel="nofollow">Upload File</a>
+                                        </label>
+                                        <input type="file" name="user-upload" id="user-upload">
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="form-text">Format file .pdf maksimal size 20MB</p>
+                    <input class="form-control" type="url" id="linkPerusahaan" name="linkPerusahaan" placeholder="Link website*">
+                    <p class="form-text">Website, Social Media, dll. Sertakan protokol URL (https:// atau http://)</p>
+                    <input class="form-check-input" type="checkbox" id="setujuSyaratKetentuan" name="setujuSyaratKetentuan"> Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku <br>
+                    <input class="btn btn-primary" type="button" id="register" name="register" value="Register">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="detikfooter">
+            <h6 class="detikfinance">detikfinance</h6>
+            <h4>BUSINESS PLAN</h4>
+            <h6 class="competition">COMPETITION 2023</h6>
+        </div>
+        <br><br>
+        <div class="contact">
+            <p>Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            <div class="sosmed"><span>
+                <a href="#" id="twitter-account"><img src="assets/img/twitter-light.png" alt="twitter"></a>
+                <a href="#" id="whatsapp-contact"><img src="assets/img/whatsapp-light.png" alt="whatsapp"></a>
+                <a href="#" id="facebook-account"><img src="assets/img/facebook-light.png" alt="facebook"></a>
+            </span></div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2023 Detikcom. All rights reserved</p>
+    </footer>
+
+    <script src="/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
