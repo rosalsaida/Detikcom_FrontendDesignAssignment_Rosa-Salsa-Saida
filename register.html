@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="assets/css/style-regis.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -67,22 +69,22 @@
             <div class="formregist">
                 <h1>Registrasi</h1>
                 <form action="#" method="post">
-                    <input class="form-control" type="text" id="nama-perusahaan" name="nama-perusahaan" placeholder="Nama Perusahaan*"><br>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="Email*"><br>
-                    <input class="form-control" type="tel" id="noTlp" name="noTlp" placeholder="Nomor Telepon*">
+                    <input class="form-control" type="text" id="nama-perusahaan" name="nama-perusahaan" placeholder="Nama Perusahaan*" required><br>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email*" required><br>
+                    <input class="form-control" type="tel" id="noTlp" name="noTlp" placeholder="Nomor Telepon*" required>
                     <p class="form-text">Isi hanya angka</p>
-                    <textarea class="form-control" id="tentangPerusahaan" name="tentangPerusahaan" placeholder="Tentang Perusahaan (Max. 200 character)*"></textarea><br>
+                    <textarea class="form-control" id="tentangPerusahaan" name="tentangPerusahaan" placeholder="Tentang Perusahaan (Max. 200 character)*" required></textarea><br>
                     <div class="up-logo">
                         <!-- Upload File Logo Perusahaan -->
-                        <div class="card text-center mb-3" style="width: 15vw; height: 20vw;">
-                            <div class="card-body" style="padding-top: 5rem;">
-                                <p class="image-upload">
+                        <div class="card text-center mb-3" style="width: 15vw; height: 15vw;">
+                            <div class="card-body" style="padding: 2.5vmin 0;">
+                                <p class="image-upload" style="padding: 2vw 1.5vmin;">
                                     <label for="user-upload">
-                                    <a class="btn btn-sm" rel="nofollow"><img src="assets/img/plus.png"></a>
+                                    <a class="btn btn-sm" rel="nofollow"><img src="assets/img/plus.png" style="width: 5vmin;"></a>
                                     </label>
-                                    <input type="file" name="user-upload" id="user-upload">
+                                    <input type="file" name="user-upload" id="user-upload" required>
                                 </p>
-                                <p class="card-text">Upload file logo*</p>
+                                <p class="card-text small">Upload file logo*</p>
                             </div>
                         </div>
                         <div class="ketentuan">
@@ -95,26 +97,26 @@
                         </div>
                     </div>
                     <!-- Upload File Deck Peusahaan -->
-                    <table style="width: 58vw;">
+                    <table>
                         <tr>
-                            <td colspan="2" style="padding-bottom: 10px;"><input type="text" class="form-control" placeholder="Profil Perusahaan atau Deck (opsional)"></td>
-                            <td style="padding-top: 5px;">
+                            <td style="padding-bottom: 10px; width: 95vmin;"><input type="text" class="form-control" placeholder="Profil Perusahaan atau Deck (opsional)" required></td>
+                            <td style="padding-top: 5px;" style="width: 10vmin;">
                                 <div class="up-deck">
                                     <p class="image-upload">
                                         <label for="user-upload">
                                         <a class="btn btn-primary" rel="nofollow">Upload File</a>
                                         </label>
-                                        <input type="file" name="user-upload" id="user-upload">
+                                        <input type="file" name="user-upload1" id="user-upload1" required>
                                     </p>
                                 </div>
                             </td>
                         </tr>
                     </table>
                     <p class="form-text">Format file .pdf maksimal size 20MB</p>
-                    <input class="form-control" type="url" id="linkPerusahaan" name="linkPerusahaan" placeholder="Link website*">
+                    <input class="form-control" type="url" id="linkPerusahaan" name="linkPerusahaan" placeholder="Link website*" required>
                     <p class="form-text">Website, Social Media, dll. Sertakan protokol URL (https:// atau http://)</p>
-                    <input class="form-check-input" type="checkbox" id="setujuSyaratKetentuan" name="setujuSyaratKetentuan"> Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku <br>
-                    <input class="btn btn-primary" type="button" id="register" name="register" value="Register">
+                    <input class="form-check-input" type="checkbox" id="setujuSyaratKetentuan" name="setujuSyaratKetentuan" required> Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku <br>
+                    <input class="btn btn-primary" type="button" id="register" name="register" value="Register" onclick="register_competition()">
                 </form>
             </div>
         </div>
