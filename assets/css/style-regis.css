@@ -105,7 +105,7 @@ nav .container-fluid .list-menu ul li a.active:hover {
     display: flex;
     justify-content: center;
     padding: 10em 0 2em 0;
-    background-image: url("/assets/img/register-img.png");
+    background-image: url("../img/register-img.png");
     background-repeat: no-repeat;
 }
 
