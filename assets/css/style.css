@@ -132,7 +132,7 @@
         margin-top: 5vh;
         margin-bottom: 10vh;
         padding: 10vmax 10vw;
-        background-image: url("../assets/img/beranda-img.png");
+        background-image: url("../img/beranda-img.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -201,7 +201,7 @@
     #mechanism {
         margin-top: 3em;
         padding: 10% 10%;
-        background-image: url("../assets/img/mechanism-img.png");
+        background-image: url("../img/mechanism-img.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
